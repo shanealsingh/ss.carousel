@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html ng-app="app">
+  <head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body lang="en-US" ng-controller="AppCtrl">
+    
+    <div ss-carousel id="wassup" options="carouselOptions" container-selector=".carousel" class="multiple ss-carousel">
+      <ul class="carousel">
+        <li ss-slide ng-repeat="item in items track by $index">
+          <span>slideIndex: {{ item.slideIndex }}</span>
+        </li>
+      </ul>
+
+      <button ss-prev-slide>Prev</button>
+      <button ss-next-slide>Next</button>
+      <button ss-prev-page>PrevPage</button>
+      <button ss-next-page>NextPage</button>
+      <hr>
+      <input type="number" min="0" ng-max="items.length" ng-model="currentIndex" ng-change="indexChanged()">
+      <pre>  currentIndex: {{ currentIndex }}
+      </pre>
+      <button ng-click="addItem()">Add Item</button>
+      <button ng-click="removeItem()">Remove Item</button>
+      <hr>
+      <ul ss-pagination class="indicator">
+        <li ss-pagination-item></li>
+      </ul>
+      <hr>
+    </div>
+
+<!--     <div ss-carousel container-selector=".carousel" class="ss-carousel single">
+      <ul class="carousel">
+        <li ss-slide ng-repeat="item in items track by $index">
+          <img src="http://lorempixel.com/400/200/" draggable="false" />
+        </li>
+      </ul>
+    </div>
+
+    <div ss-carousel container-selector=".carousel" class="ss-carousel peak">
+      <ul class="carousel">
+        <li ss-slide ng-repeat="item in items track by $index">
+          <img src="http://lorempixel.com/400/200/" draggable="false" />
+        </li>
+      </ul>
+    </div> -->
+
+    <script src="../bower_components/hammerjs/hammer.min.js"></script>
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../dist/ss-carousel.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

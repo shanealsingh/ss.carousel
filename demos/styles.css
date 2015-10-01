@@ -1,0 +1,76 @@
+ul {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+.ss-carousel {
+  margin: 25px auto;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 900px;
+  background: aqua;
+  list-style: none;
+}
+ul {
+  position: relative;
+  box-sizing: border-box;
+  transform: translateZ(0);
+  transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: transform;
+  white-space: nowrap;
+}
+ul > li {
+  display: inline-block;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: text-bottom;
+}
+/* Specific */
+.multiple ul > li {
+  padding-bottom: 12%;
+  margin-right: 2%;
+  width: 49%;
+  background: #ccc;
+}
+@media screen and (min-width: 900px) {
+  .multiple ul > li {
+    margin-right: 1%;
+    width: 24.25%;
+  }
+}
+.single ul > li {
+  margin-right: 1%;
+  width: 100%;
+}
+.peak ul > li {
+  margin-right: 10%;
+  width: 60%;
+}
+.peak ul > li:first-child {
+  margin-left: 20%;
+}
+button {
+  margin-top: 25px;
+}
+.indicator {
+  margin: 25px;
+  display: none;
+}
+.indicator.initalized {
+  display: block;
+}
+.indicator li {
+  padding-bottom: 0 !important;
+  width: 25px !important;
+  height: 25px;
+  opacity: .2;
+}
+.indicator li.active {
+  opacity: 1;
+}

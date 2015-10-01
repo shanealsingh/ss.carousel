@@ -1,0 +1,26 @@
+{
+  "name": "ss-carousel",
+  "version": "0.0.1",
+  "description": "ssCarousel - Simple Carousel for AngularJS",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp serve"
+  },
+  "bugs": {
+    "url": "https://github.com/shanealsingh/ss-carousel/issues"
+  },
+  "homepage": "https://github.com/shanealsingh/ss-carousel#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-less": "^3.0.3",
+    "gulp-live-server": "0.0.28",
+    "gulp-open": "^1.0.0",
+    "jasmine": "^2.3.2",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.10",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.6"
+  }
+}

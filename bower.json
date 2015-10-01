@@ -1,0 +1,23 @@
+{
+  "name": "ss-carousel",
+  "description": "ssCarousel - Simple Carousel for AngularJS",
+  "version": "0.0.1",
+  "homepage": "https://github.com/shanealsingh/ss-carousel",
+  "author": "Shaneal Singh <shanealsingh@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shanealsingh/ss-carousel.git"
+  },
+  "main": [
+    "dist/angular-carousel.js"
+  ],
+  "ignore": [
+    "demo"
+  ],
+  "dependencies": {
+    "angular": ">=1.4.0",
+    "angular-mocks": "~1.4.6",
+    "hammerjs": "~2.0.4",
+    "jquery": "~2.1.4"
+  }
+}
