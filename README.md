@@ -1,6 +1,6 @@
 # ss.carousel
 
-A lightweight carousel built in AngularJS
+A lightweight carousel directive built in AngularJS
 
 *This is a work in progress*
 
